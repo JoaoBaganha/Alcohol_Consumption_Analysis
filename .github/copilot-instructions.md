@@ -111,3 +111,18 @@ fig2 = px.choropleth(
 1. Inserir em nova subseção de `## 5` (EDA Gráfica) ou `## 3` (Exploração)
 2. Preferir `seaborn` para gráficos estatísticos (histogramas, boxplots, correlações)
 3. Usar configuração padrão: `sns.set_style()` se necessário customizar tema
+
+## Estado Atual do Projeto
+
+- **Última subseção**: 5.2 (Mapa contínuo de consumo)
+- **Células vazias**: 2 células de código vazias após seção 5.2 (linhas 177, 180)
+- **Próximas análises sugeridas**: Gráficos estatísticos com seaborn (distribuições, correlações entre tipos de bebida, top/bottom países)
+- **Variáveis kernel**: `df_drinks`, `bins`, `labels`, `category_order`, `fig`, `fig2` - sempre reutilizar essas variáveis existentes
+
+## Avisos Críticos de Edição
+
+- **NUNCA** renumere seções principais (1-5) - apenas adicione subseções (ex: 5.3, 5.4)
+- **NUNCA** modifique `bins` ou `labels` - são baseados em análise quartil específica dos dados de 2010
+- **SEMPRE** use `df_drinks` como nome do DataFrame - código existente depende disso
+- **SEMPRE** inclua célula markdown explicativa ANTES de código de análise
+- **SEMPRE** teste visualizações com `.show()` para Plotly ou `.tight_layout(); plt.show()` para matplotlib
